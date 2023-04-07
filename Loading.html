@@ -8,21 +8,22 @@
     <title>Home</title>
   </head>
   <body>
-
+    
     <div class="container">
 
       <div class='parent'>
         <div class='child_1'>
-          <img src="../Img/HomeRickAndMorty.svg" alt="Logo">
+          <img id="CharactersCelebration" src="../Img/CharactersCelebration.svg" alt="Logo">
         </div>
         <div class='child_1'>
           <div class="child_2">
-            <a href="Start.html" id="press_1" class="press">Start </a>
+            <input type="text" id="myText" value="Nazwa gracza">
           </div>
          
-            <div class="child_2">
-              <a href="Ranking.html" class="press">Ranking</a>
-            </div>
+          <div class="child_2">
+            <Button onclick="console.log(localStorage.getItem('Nazwa gracza'))" class="press">Result</Button>
+          </div>
+          <div><Button onclick="location.href ='Result.html'" id="redirect">Redirect</Button></div>
         </div>
       </div>
     </div>

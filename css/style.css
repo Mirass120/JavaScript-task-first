@@ -1,8 +1,141 @@
-body {
-  background-color: #333;
-  color: #efefef;
+:root {
+  --box-main-color: #90C845;
+  --main-font-family: 'Inter';
+  --main-txt-color: #EFEFEF;
+
 }
 
-a {
-  color: tomato;
+body {
+  background-image: url(../Img/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+}
+
+.container
+{
+  margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	padding: 0;
+	margin-bottom: auto;
+}
+
+.parent {
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+  
+}
+
+.child_1 {
+  display: inline-block;
+  padding: 1.5rem 1rem;
+  vertical-align: middle;
+  width: 400px;
+}
+
+#podajNick.child_2 {
+  display: inline-block;
+  padding: 0.0rem 1rem;
+  vertical-align: middle;
+  width: 400px;
+  text-align: left;
+  text-indent: 40px;
+  font-size: 32px;
+  line-height:39px;
+  color: var(--box-main-color);
+}
+
+.child_1 img {
+  max-width: 431px;
+}
+
+img#CharactersCelebration {
+  height: 431px;
+}
+
+.child_2 {
+  padding: 20px 50px 60px;
+  vertical-align: middle;
+
+}
+
+.child_2 a {
+  box-sizing: border-box;
+  position: relative;
+  width: 400px;
+  padding: 0px 0px;
+  border-radius: 50px;
+  border: 6px solid var(--box-main-color);
+  text-decoration: none;
+}
+
+a.press {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  align-items: center;
+  text-align: center;
+  padding: 10px 120px 10px 120px ; 
+  margin-bottom: 50px;
+  /* font */
+  color: var(--main-txt-color);
+}
+
+a.press#press_1 {
+  padding: 10px 150px 10px 150px ; 
+}
+
+.child_2 input {
+  box-sizing: border-box;
+  position: relative;
+  width: 530px;
+  height:80px;
+  padding: 0px 0px;
+  border-radius: 50px;
+  border: 0px solid var(--box-main-color);
+
+}
+
+input#myText {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0px;
+  align-items: center;
+  text-align: left;
+  text-indent: 45px;
+  color: #C4C4C4;
+
+}
+
+
+
+button#Rozpocznij {
+  box-sizing: border-box;
+  position: relative;
+  width: 530px;
+  padding: 0px 0px;
+  border-radius: 50px;
+  border: 6px solid var(--box-main-color);
+}
+
+Button#Rozpocznij {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  align-items: center;
+  text-align: center;
+  padding: 11px 165px 11px 165px ; 
+  margin-bottom: 50px;
+  /* font */
+  color: var(--main-txt-color);
+  background-color: var(--box-main-color);
 }
