@@ -1,8 +1,7 @@
 :root {
-  --box-main-color: #90C845;
-  --main-font-family: 'Inter';
-  --main-txt-color: #EFEFEF;
-
+  --box-main-color: #90c845;
+  --main-font-family: "Inter";
+  --main-txt-color: #efefef;
 }
 
 body {
@@ -12,21 +11,42 @@ body {
   background-color: white;
 }
 
-.container
-{
+.container {
   margin-top: 100px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 1000px;
-	padding: 0;
-	margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  padding: 0;
+  margin-bottom: auto;
+}
+
+.container_1 {
+  position: relative;
+  justify-content: center;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: 550px;
+  padding: 0;
+  margin-bottom: auto;
+}
+
+.plakat {
+  position: relative;
+  justify-content: center;
+  width: 1000px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #90c845;
+  border-radius: 60px;
 }
 
 .parent {
   margin: 1rem;
   padding: 2rem 2rem;
   text-align: center;
-  
 }
 
 .child_1 {
@@ -38,13 +58,13 @@ body {
 
 #podajNick.child_2 {
   display: inline-block;
-  padding: 0.0rem 1rem;
+  padding: 0rem 1rem;
   vertical-align: middle;
   width: 400px;
   text-align: left;
   text-indent: 40px;
   font-size: 32px;
-  line-height:39px;
+  line-height: 39px;
   color: var(--box-main-color);
 }
 
@@ -59,7 +79,6 @@ img#CharactersCelebration {
 .child_2 {
   padding: 20px 50px 60px;
   vertical-align: middle;
-
 }
 
 .child_2 a {
@@ -80,25 +99,24 @@ a.press {
   line-height: 48px;
   align-items: center;
   text-align: center;
-  padding: 10px 120px 10px 120px ; 
+  padding: 10px 120px 10px 120px;
   margin-bottom: 50px;
   /* font */
   color: var(--main-txt-color);
 }
 
 a.press#press_1 {
-  padding: 10px 150px 10px 150px ; 
+  padding: 10px 150px 10px 150px;
 }
 
 .child_2 input {
   box-sizing: border-box;
   position: relative;
   width: 530px;
-  height:80px;
+  height: 80px;
   padding: 0px 0px;
   border-radius: 50px;
   border: 0px solid var(--box-main-color);
-
 }
 
 input#myText {
@@ -110,11 +128,8 @@ input#myText {
   align-items: center;
   text-align: left;
   text-indent: 45px;
-  color: #C4C4C4;
-
+  color: #c4c4c4;
 }
-
-
 
 button#Rozpocznij {
   box-sizing: border-box;
@@ -133,9 +148,164 @@ Button#Rozpocznij {
   line-height: 48px;
   align-items: center;
   text-align: center;
-  padding: 11px 165px 11px 165px ; 
+  padding: 11px 165px 11px 165px;
   margin-bottom: 50px;
   /* font */
   color: var(--main-txt-color);
   background-color: var(--box-main-color);
+}
+
+img#RickAndMortyLogo {
+  position: absolute;
+  top: 85%;
+  left: 32%;
+}
+
+img#Vector_1 {
+  position: absolute;
+  top: -10%;
+  left: -7%;
+}
+
+img#Vector_2 {
+  position: absolute;
+  top: -10%;
+  left: 90%;
+}
+
+img#Exit {
+  position: absolute;
+  top: -2%;
+  left: 96.5%;
+}
+
+img#RicksHead {
+  position: absolute;
+  top: -30%;
+  left: 35%;
+}
+
+h1#CoToZaPostać {
+  position: absolute;
+  top: 8%;
+  left: 37%;
+  color: var(--main-txt-color);
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+img#Placeholder {
+  position: absolute;
+  top: 90%;
+  left: -120%;
+  width: 200px;
+  height: 200px;
+}
+
+img#Group_A {
+  position: absolute;
+  top: 90%;
+  left: -40%;
+}
+
+h3#Postać_A {
+  position: absolute;
+  color: var(--main-txt-color);
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+img#Group_B {
+  position: absolute;
+  top: 27%;
+  left: 60%;
+}
+
+h3#Postać_B {
+  position: absolute;
+  left: 100%;
+  width: 200px;
+  color: var(--main-txt-color);
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+img#Group_C {
+  position: absolute;
+  top: 55%;
+  left: 26.5%;
+}
+
+h3#Postać_C {
+  position: absolute;
+  left: 65%;
+  width: 200px;
+  color: var(--main-txt-color);
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+img#Group_D {
+  position: absolute;
+  top: 55%;
+  left: 60%;
+}
+
+h3#Postać_D {
+  position: absolute;
+  width: 200px;
+  left: 100%;
+  color: var(--main-txt-color);
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+span {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  color: var(--main-txt-color);
+}
+
+.A {
+  position: absolute;
+  top: 90%;
+  left: -10%;
+  width: 200px;
+}
+
+.B {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  width: 200px;
+}
+
+.C {
+  position: absolute;
+  top: 240%;
+  left: -60%;
+  width: 200px;
+}
+
+.D {
+  position: absolute;
+  top: 240%;
+  left: 50%;
+  width: 200px;
 }

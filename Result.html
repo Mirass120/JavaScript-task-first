@@ -5,9 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Home</title>
   </head>
   <body>
+
+    <div class="container">
+      <div class="plakat">
+        <Button id="opcja_1" onclick="btn">Nick</Button>
+        <Button id="opcja_2" onclick="nowa(this.textContent)">Jack</Button>
+        <Button id="opcja_3" onclick="countdown()">Zegar</Button>
+        <h2> <span class="zegar">1:10</span></h2>
+
+
+      </div>
+    </div> 
     
     <div class="container">
 
@@ -28,6 +40,6 @@
     </div>
     
   
-    <script src="/js/index.js"></script>
+    <script src="/js/quiz.js"></script>
   </body>
 </html>

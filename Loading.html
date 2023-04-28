@@ -5,30 +5,55 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Home</title>
   </head>
   <body>
-    
-    <div class="container">
+    <div class="container_1">
+      <div class="plakat">
+        <img id="RickAndMortyLogo" src="../Img/RickAndMortyLogo.svg" />
+        <img id="Vector_1" src="../Img/Vector.svg" />
+        <img id="Vector_2" src="../Img/Vector.svg" />
+        <img id="RicksHead" src="../Img/RicksHead.svg" />
+        <img id="Exit" src="../Img/Vector-2.svg" />
+        <h1 id="CoToZaPostać">Co to za postać...</p>
+        <img
+          id="Placeholder"
+          src="../Img/Zrzut ekranu 2023-03-30 o 15.06.svg"
+        />
 
-      <div class='parent'>
-        <div class='child_1'>
-          <img id="CharactersCelebration" src="../Img/CharactersCelebration.svg" alt="Logo">
+        <div class="A">
+          <a href="#" id="przycisk_A" onclick="Characters(this.textContent)">
+            <img id="Group_A" src="../Img/Group A.svg" />
+            <h3 id="Postać_A">Kliknij aby rozpocząć</h3>
+          </a>
         </div>
-        <div class='child_1'>
-          <div class="child_2">
-            <input type="text" id="myText" value="Nazwa gracza">
-          </div>
-         
-          <div class="child_2">
-            <Button onclick="console.log(localStorage.getItem('Nazwa gracza'))" class="press">Result</Button>
-          </div>
-          <div><Button onclick="location.href ='Result.html'" id="redirect">Redirect</Button></div>
+
+        <div class="B">
+          <a href="#" id="przycisk_B" onclick="Characters(this.textContent)">
+            <img id="Group_B" src="../Img/Group B.svg" />
+            <h3 id="Postać_B">Kliknij aby rozpocząć</h3>
+          </a>
         </div>
+
+        <div class="C">
+          <a href="#" id="przycisk_C" onclick="Characters(this.textContent)">
+            <img id="Group_C" src="../Img/Group C.svg" />
+            <h3 id="Postać_C">Kliknij aby rozpocząć</h3>
+          </a>
+        </div>
+
+        <div class="D">
+          <a href="#" id="przycisk_D" onclick="Characters(this.textContent)">
+            <img id="Group_D" src="../Img/Group D.svg" />
+            <h3 id="Postać_D">Kliknij aby rozpocząć</h3>
+          </a>
+        </div>
+
+        <h2><span class="zegar">0:30</span></h2>
       </div>
     </div>
-    
-  
+
     <script src="/js/index.js"></script>
   </body>
 </html>
