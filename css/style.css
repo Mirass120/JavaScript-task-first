@@ -309,3 +309,72 @@ span {
   left: 50%;
   width: 200px;
 }
+
+table {
+  border-collapse: collapse;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  width: 200px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  color: white;
+}
+
+.wynikQuizu {
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 200px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.twojWynik {
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 28%;
+  width: 200px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.trzyNajlepsze {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  width: 400px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#Wynik {
+  color: #ecfd9a;
+  position: absolute;
+  top: 25%;
+  left: 60%;
+  width: 400px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#rankingContainer {
+  color: white;
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  width: 400px;
+}
+
+#rankingContainer p {
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#Exit:hover {
+  cursor: pointer;
+}
