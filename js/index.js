@@ -16,7 +16,7 @@ async function validateForm() {
   }
 }
 
-var interval;
+let interval;
 
 async function Characters(text) {
   if (text.trim() == answerName.trim()) {
@@ -69,24 +69,23 @@ async function Characters(text) {
   //Timer
   clearInterval(interval);
   interval = setInterval(function () {
-    var timer = $(".zegar").html();
+    let timer = document.querySelector(".zegar").innerHTML;
     timer = timer.split(":");
-    var minutes = timer[0];
-    var seconds = timer[1];
+    let minutes = timer[0];
+    let seconds = timer[1];
     seconds -= 1;
     if (minutes < 0) return;
     else if (seconds < 0 && minutes != 0) {
-      minutes -= 0;
+      minutes -= 1;
       seconds = 30;
     } else if (seconds < 10 && length.seconds != 2) seconds = "0" + seconds;
-
-    $(".zegar").html(minutes + ":" + seconds);
+    document.querySelector(".zegar").innerHTML = `${minutes}:${seconds}`;
 
     if (minutes == 0 && seconds == 0) {
-      let existingRanking = localStorage.getItem("Ranking"); // Pobranie rankingu
-      let RankingScore = existingRanking ? JSON.parse(existingRanking) : []; // Jeśli nie istnieje, utwórz nową pustą tablicę
+      const existingRanking = localStorage.getItem("Ranking"); // Pobranie rankingu
+      const RankingScore = existingRanking ? JSON.parse(existingRanking) : []; // Jeśli nie istnieje, utwórz nową pustą tablicę
       // Dodanie nowego wyniku gracza do tablicy
-      let playerResult = {
+      const playerResult = {
         name: localStorage.getItem("Nazwa gracza"),
         score: score,
       };

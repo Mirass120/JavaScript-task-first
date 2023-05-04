@@ -1,6 +1,6 @@
-let existingRanking = localStorage.getItem("Ranking");
-let RankingScore = existingRanking ? JSON.parse(existingRanking) : [];
-let wynik = localStorage.getItem("Wynik");
+const existingRanking = localStorage.getItem("Ranking");
+const RankingScore = existingRanking ? JSON.parse(existingRanking) : [];
+const wynik = localStorage.getItem("Wynik");
 
 //Wyświetlenie wyniku dla ostatniej gry
 document.getElementById("Wynik").textContent = wynik;
@@ -9,7 +9,7 @@ document.getElementById("Wynik").textContent = wynik;
 RankingScore.sort((a, b) => b.score - a.score);
 
 // Ograniczenie wyników tylko do trzech najlepszych pozycji
-let top3Results = RankingScore.slice(0, 3);
+const top3Results = RankingScore.slice(0, 3);
 
 // Wygenerowanie prezentacji ranking w HTML
 let rankingHTML = "";
