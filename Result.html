@@ -9,37 +9,18 @@
     <title>Home</title>
   </head>
   <body>
-
     <div class="container">
       <div class="plakat">
-        <Button id="opcja_1" onclick="btn">Nick</Button>
-        <Button id="opcja_2" onclick="nowa(this.textContent)">Jack</Button>
-        <Button id="opcja_3" onclick="countdown()">Zegar</Button>
-        <h2> <span class="zegar">1:10</span></h2>
+        <h1 class="wynikQuizu">Wynik quizu</h1>
 
+        <div id="rankingContainer"></div>
 
-      </div>
-    </div> 
-    
-    <div class="container">
-
-      <div class='parent'>
-        <div class='child_1'>
-          <img id="CharactersCelebration" src="../Img/CharactersCelebration.svg" alt="Logo">
-        </div>
-        <div class='child_1'>
-          <div class="child_2">
-            <input type="text" id="myText" value="Nazwa gracza">
-          </div>
-         
-          <div class="child_2">
-            <Button onclick="console.log(localStorage.getItem('x'))" class="press">Ranking</Button>
-          </div>
-        </div>
+        <h1 class="twojWynik">Twój wynik:</h1>
+        <h1 id="Wynik">text</h1>
+        <h1 class="trzyNajlepsze">Trzy najlepsze wyniki</h1>
       </div>
     </div>
-    
-  
+
     <script src="/js/quiz.js"></script>
   </body>
 </html>
