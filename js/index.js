@@ -101,5 +101,5 @@ async function Characters(text) {
 }
 
 function Exit() {
-  location.href = "";
+  location.href = "https://mirass120.github.io/JavaScript-task-first";
 }
