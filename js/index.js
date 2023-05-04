@@ -101,5 +101,5 @@ async function Characters(text) {
 }
 
 function Exit() {
-  location.href = "Index.html";
+  location.href = "";
 }
